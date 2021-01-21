@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Afifah</string>
+    <string name="afifah">Afifah</string>
+    <string name="todo">TODO</string>
+    <string name="kamus_guide_bahasa_sumbawa">Kamus Guide Bahasa Sumbawa</string>
+    <string name="loading">Loading . . .</string>
+    <string name="type_something_here">type something here</string>
+    <string name="camera">Camera</string>
+    <string name="speak">Speak</string>
+    <string name="sai_singin_mu">sai singin mu</string>
+    <string name="swipe_to_change_translator">Swipe to change translator</string>
+    <string name="english">English</string>
+    <string name="translate">translate</string>
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="0dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:gravity="center|top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/logo"
+                    android:layout_marginVertical="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afifah"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/searchBarHintColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/english"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:paddingStart="35dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/picture6" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sumbawa"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ketikdisini"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/form"
+                    android:gravity="center"
+                    android:hint="@string/type_something_here" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|top"
+                    android:padding="20dp">
+
+                    <Button
+                        android:id="@+id/btn_camera"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="140dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tombol"
+                        android:textColor="#ffff"
+                        android:text="@string/camera"
+                        android:textStyle="bold"
+                        android:textSize="13sp"/>
+
+                    <Button
+                        android:id="@+id/btn_audio"
+                        android:layout_width="140dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/tombol"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:text="@string/speak"
+                        android:onClick="getsuara"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_translate"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tombol"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:text="@string/translate"
+                    android:textSize="13sp"
+                    android:onClick="getTerjemahan"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/hasil_terjemahan"
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pecarian Sebelumnya :"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="95dp"/>
+
+                <ListView
+                    android:id="@+id/histori"
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/swipe_to_change_translator"
+                    android:textSize="15sp"
+                    android:textAlignment="gravity"
+                    android:gravity="end" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="68dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="-0dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/picture9" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
